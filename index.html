@@ -35,7 +35,7 @@
                 </div>
 
 
-                <div class="buttons">
+                <div class="thumbs">
                     <div class="prev" @click="prev()"><i id="prev" class="fa-solid fa-chevron-up"></i></div>
                     <div class="next" @click="next()"><i id="next" class="fa-solid fa-chevron-down"></i></div>
                     <div class="thumb" v-for="(element, index) in images" :class="(counter == index) ? 'active' : ''" @click="image(index)">

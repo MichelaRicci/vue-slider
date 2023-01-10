@@ -4,6 +4,7 @@
 }
 
 #gallery {
+
     position: relative;
 
     height: 400px;
@@ -30,32 +31,11 @@ img.active {
 
 
 
-/* Buttons */
-
-.fa-solid{
-    position: absolute;
-    cursor: pointer;
-
-
-    background-color: rgba(0, 0, 0, 0.183);
-    color: #fff;
-    padding: 10px;
-    border-radius: 50px;
-
-    z-index: 1;
-}
-
-
-#prev {
-    top: 30%;
- 
-}
-
-#next {
-    bottom: 55%;
-}
-
 /* Thumb */
+
+.thumbs {
+    position: relative;
+}
 
 .thumb {
     height: calc((400px) / 5);
@@ -74,9 +54,41 @@ img.active {
 }
 
 
+/* Buttons */
+
+.fa-solid{
+    cursor: pointer;
+
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
+
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%);
+    border-radius: 50px;
+
+    z-index: 1;
+}
+
+
+#prev {
+    top: 5%;
+
+}
+
+#next {
+    bottom: 5%;
+
+}
+
+
 /* Text */
 
 .text {
+
     position: absolute;
     bottom: 20px;
     left: 10px;
