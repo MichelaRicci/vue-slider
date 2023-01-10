@@ -26,7 +26,7 @@
 
                 <div id="gallery">
                    
-                    <img :src="images.image" alt="img">
+                    <img :src="images[counter].image" alt="img">
                     <div class="text">
                         <h2>{{ images[counter].title }}</h2>
                         <h5>{{ images[counter].text }}</h5>
@@ -38,7 +38,7 @@
                 <div class="buttons">
                     <div class="prev" @click="prev()"><i id="prev" class="fa-solid fa-chevron-up"></i></div>
                     <div class="next" @click="next()"><i id="next" class="fa-solid fa-chevron-down"></i></div>
-                    <div class="thumb" v-for="(element, index) in images" :class="(counter == index) ? 'active' : ''" @click="img(index)">
+                    <div class="thumb" v-for="(element, index) in images" :class="(counter == index) ? 'active' : ''" @click="image(index)">
                         <img :src="element.image" alt="img"/>
                     </div>
                 </div>
