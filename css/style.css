@@ -77,8 +77,6 @@ img.active {
 /* Text */
 
 .text {
-    display: none;
-
     position: absolute;
     bottom: 20px;
     left: 10px;
